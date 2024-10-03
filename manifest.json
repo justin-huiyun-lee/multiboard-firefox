@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "MultiBoard",
+  "version": "1.0",
+  "description": "Copy multiple things to clipboard and save them for later",
+  "permissions": ["clipboardWrite", "clipboardRead"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/multiboard-firefox-icon.png",
+      "48": "assets/multiboard-firefox-icon.png",
+      "128": "assets/multiboard-firefox-icon.png"
+    }
+  },
+  "icons": {
+    "16": "assets/multiboard-firefox-icon.png",
+    "48": "assets/multiboard-firefox-icon.png",
+    "128": "assets/multiboard-firefox-icon.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "multiboard@5nsou.cool"
+    }
+  }
+}

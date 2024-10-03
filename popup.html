@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MultiBoard</title>
+  </head>
+  <body>
+    <div class="image-container">
+      <div class="image-background">
+        <img
+          src="assets/multiboard-firefox-icon.png"
+          alt="MultiBoard Icon"
+          class="logo-image"
+        />
+      </div>
+    </div>
+    <h1>MultiBoard</h1>
+
+    <!-- First-time user input section -->
+    <div id="first-time-setup" style="display: none">
+      <p>How many clipboards would you like to have?</p>
+      <input type="number" id="clipboard-count" placeholder="Enter number" />
+      <button id="save-clipboard-count">Save</button>
+    </div>
+
+    <!-- Normal page content section -->
+    <div id="normal-content" style="display: none">
+      <a href="https://www.buymeacoffee.com/5nsou"
+        ><img
+          src="https://img.buymeacoffee.com/button-api/?text=I am broke. pls donate :(&emoji=&slug=5nsou&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+      /></a>
+
+      <!-- New section to change clipboard history limit -->
+      <div>
+        <h3>Change Clipboard History Limit</h3>
+        <label id="history-limit-label" for="history-limit"
+          >Set the limit:</label
+        >
+        <input type="number" id="history-limit" min="1" />
+        <button id="save-history-limit" class="button-2">Update</button>
+      </div>
+
+      <!-- Clipboard History Section -->
+      <h2>Clipboard History</h2>
+      <ul id="clipboard-list"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
