@@ -8,33 +8,37 @@
   </head>
   <body>
     <div class="image-container">
-      <div class="image-background">
-        <img
-          src="assets/multiboard-firefox-icon.png"
-          alt="MultiBoard Icon"
-          class="logo-image"
-        />
-      </div>
+      <img
+        src="assets/multiboard-firefox-image.png"
+        alt="MultiBoard Icon"
+        class="logo-image"
+      />
     </div>
-    <h1>MultiBoard</h1>
+    <div class="title-container">
+      <h1>MultiBoard</h1>
+    </div>
 
     <!-- First-time user input section -->
     <div id="first-time-setup" style="display: none">
-      <p>How many clipboards would you like to have?</p>
-      <input type="number" id="clipboard-count" placeholder="Enter number" />
-      <button id="save-clipboard-count">Save</button>
+      <label id="history-limit-label" for="history-limit"
+        >Set the clipboard limit:</label
+      >
+      <input type="number" id="history-limit" min="1" />
+      <button id="save-history-limit" class="button-2">Set</button>
     </div>
 
     <!-- Normal page content section -->
     <div id="normal-content" style="display: none">
-      <a href="https://www.buymeacoffee.com/5nsou"
-        ><img
-          src="https://img.buymeacoffee.com/button-api/?text=I am broke. pls donate :(&emoji=&slug=5nsou&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
-      /></a>
+      <div class="coffee-container">
+        <a href="https://www.buymeacoffee.com/5nsou"
+          ><img
+            src="https://img.buymeacoffee.com/button-api/?text=I am broke. pls donate :(&emoji=&slug=5nsou&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+        /></a>
+      </div>
 
       <!-- New section to change clipboard history limit -->
       <div>
-        <h3>Change Clipboard History Limit</h3>
+        <h2>Change Clipboard History Limit</h2>
         <label id="history-limit-label" for="history-limit"
           >Set the limit:</label
         >

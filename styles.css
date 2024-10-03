@@ -93,14 +93,13 @@ button {
 
 #history-limit-label {
   font-size: 14px;
-  font-weight: 500;
   line-height: 20px;
   margin: 10px;
 }
 
 .logo-image {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .image-container {
@@ -109,9 +108,14 @@ button {
   justify-content: center;
 }
 
-.image-background {
-  background-color: black;
-  padding: 30px;
-  border-radius: 100%;
-  margin-bottom: 10px;
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.coffee-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
 }
