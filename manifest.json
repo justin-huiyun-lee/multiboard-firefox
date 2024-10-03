@@ -21,7 +21,7 @@
     "48": "assets/multiboard-firefox-icon.png",
     "128": "assets/multiboard-firefox-icon.png"
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "multiboard@5nsou.cool"
     }
