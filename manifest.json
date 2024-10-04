@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "MultiBoard",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Copy multiple things to clipboard and save them for later",
   "permissions": ["clipboardWrite", "clipboardRead"],
   "background": {
