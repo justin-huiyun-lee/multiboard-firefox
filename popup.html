@@ -20,11 +20,16 @@
 
     <!-- First-time user input section -->
     <div id="first-time-setup" style="display: none">
-      <label id="history-limit-label" for="history-limit"
+      <label id="clipboard-limit-label" for="clipboard-count"
         >Set the clipboard limit:</label
       >
-      <input type="number" id="history-limit" min="1" />
-      <button id="save-history-limit" class="button-2">Set</button>
+      <input
+        type="number"
+        id="clipboard-count"
+        placeholder="Enter a number"
+        min="1"
+      />
+      <button id="save-clipboard-count" class="button-2">Set</button>
     </div>
 
     <!-- Normal page content section -->
